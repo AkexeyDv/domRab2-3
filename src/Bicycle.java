@@ -8,8 +8,9 @@ public class Bicycle extends Transport{
     public Bicycle(String modelName,int wheelsCount) {
         super(modelName, wheelsCount);
     }
- /*   @Override
+  @Override
     public void check() {
-        System.out.println("Меняем покрышку");
-    }*/
+      System.out.println(getModelName());
+      System.out.println("Меняем покрышку");
+  }
 }

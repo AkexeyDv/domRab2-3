@@ -18,12 +18,12 @@ public abstract class Transport implements ServiceStation {
     public void check(){
         System.out.println(getModelName());
         System.out.println("Меняем покрышку");
-        if(getClass()==Car.class||getClass()==Truck.class){
-            System.out.println("Проверяем двигатель");
-        }
-        if(getClass()==Truck.class){
-            System.out.println("Проверяем прицеп");
-        }
+
+        System.out.println("Проверяем двигатель");
+
+
+        System.out.println("Проверяем прицеп");
+
 
 
 

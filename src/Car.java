@@ -10,10 +10,11 @@ public class Car extends Transport{
 
 
 
-/*@Override
+@Override
     public void check() {
+        System.out.println(getModelName());
         System.out.println("Меняем покрышку");
         System.out.println("Проверяем двигатель");
     }
-*/
+
 }
