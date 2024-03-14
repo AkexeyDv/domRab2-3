@@ -1,20 +1,15 @@
-public class Bicycle {
+public class Bicycle extends Transport{
     /*Было
     public String modelName;
     public int wheelsCount;
     Исправляем инкапсуляцию
     */
-    private String modelName;
-    private int wheelsCount;
-    //Поля класса теперь приватные и доступа извне к ним нет. Поэтому...
-    // Добавляем конструктор
 
-    public Bicycle(String modelName, int wheelsCount) {
-        this.modelName = modelName;
-        this.wheelsCount = wheelsCount;
+    public Bicycle(String modelName,int wheelsCount) {
+        super(modelName, wheelsCount);
     }
-
-    public void updateTyre() {
+ /*   @Override
+    public void check() {
         System.out.println("Меняем покрышку");
-    }
+    }*/
 }
