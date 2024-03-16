@@ -1,8 +1,16 @@
-public class Bicycle {
-    private String modelName;
-    private int wheelsCount;
+public class Bicycle extends Transport{
+    /*Было
+    public String modelName;
+    public int wheelsCount;
+    Исправляем инкапсуляцию
+    */
 
-    public void updateTyre() {
-        System.out.println("Меняем покрышку");
+    public Bicycle(String modelName,int wheelsCount) {
+        super(modelName, wheelsCount);
     }
+  @Override
+    public void check() {
+      System.out.println(getModelName());
+      System.out.println("Меняем покрышку");
+  }
 }
